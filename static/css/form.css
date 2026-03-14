@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+
+fieldset{
+  width: 50%;
+  margin:auto;
+}
+
+input[type="range"]{
+  width: 340px;
+}
+datalist{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: 20px;
+}
+
+
