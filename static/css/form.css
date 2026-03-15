@@ -2,9 +2,11 @@
   box-sizing: border-box;
 }
 
-fieldset{
+form{
   width: 50%;
   margin:auto;
+  border:1px black solid;
+  padding-left: 10px;
 }
 
 input[type="range"]{
@@ -15,6 +17,10 @@ datalist{
   justify-content: space-between;
   width: 200px;
   margin-left: 20px;
+}
+
+.form-actions{
+  padding: 10px 10px;
 }
 
 

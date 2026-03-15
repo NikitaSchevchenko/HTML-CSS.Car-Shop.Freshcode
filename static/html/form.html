@@ -95,14 +95,16 @@
       <p>Color</p>
 
       <div class="form-element">
+        <label for="red">Red</label>
+        <input type="radio" id="red" name="color" value="Red">
         <label for="black">Black</label>
-        <input type="radio" id="black" name="black" value="Black">
+        <input type="radio" id="black" name="color" value="Black">
         <label for="blue">Blue</label>
-        <input type="radio" id="blue" name="blue" value="Blue">
+        <input type="radio" id="blue" name="color" value="Blue">
         <label for="blue">White</label>
-        <input type="radio" id="white" name="white" value="White">
+        <input type="radio" id="white" name="color" value="White">
         <label for="blue">Grey</label>
-        <input type="radio" id="grey" name="grey" value="Grey">
+        <input type="radio" id="grey" name="color" value="Grey">
       </div>
 
       <div class="form-element">
@@ -130,6 +132,10 @@
         </datalist>
       </div>
     </fieldset>
+    <div class="form-actions">
+      <button type="reset">Cancel</button>
+      <button type="submit">Ok</button>
+    </div>
   </form>
 </body>
 </html>
