@@ -8,130 +8,145 @@
 </head>
 <body>
   <form>
-    <fieldset>
-      <legend>Personal info</legend>
-      <div class="form-element">
-        <label for="first-name">First name</label>
-        <input type="text" id="first-name" name="first-name">
-      </div>
+    <div class="caption">
+      <h1>Home work for CSS flexbox</h1>
+    </div>
 
-      <div class="form-element">
-        <label for="last-name">Last name</label>
-        <input type="text" id="last-name" name="last-name">
-      </div>
-
-      <div class="form-element">
-        <label for="birthday">Birthday</label>
-        <input type="datetime-local" id="birthday" name="birthday">
-      </div>
-
-      <p>Gender</p>
-
-      <div class="form-element">
-        <label for="male">Male</label>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="female">Female</label>
-        <input type="radio" id="female" name="gender" value="Female">
-      </div>
-
-      <div class="form-element">
-        <label for="drive-experience">Drive experience</label>
-        <select id="drive-experience" name="drive-experience">
-            <option value="" disabled selected>---</option>
-            <option value="0-1">0-1 years</option>
-            <option value="1-3">1-3 years</option>
-            <option value="3-5">3-5 years</option>
-            <option value="5-10">5-10 years</option>
-            <option value="10+">10+ years</option>
-        </select>
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Contacts</legend>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="your@gmail.com" required>
-      </div>
-
-      <div class="form-element">
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" placeholder="+380" required>
-      </div>
-
-      <div class="form-element">
-        <label for="adress">Adress</label>
-        <textarea id="adress" name="adress" rows="2" cols="30" placeholder="Your adress"></textarea>
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Car info</legend>
-      
-      <div class="form-element">
-        <label for="brand">Brand</label>
-        <select id="brand" name="brand">
-            <option value="" disabled selected>---</option>
-            <option value="Ford">Ford</option>
-            <option value="Toyota">Toyota</option>
-            <option value="BMW">BMW</option>
-        </select>
-      </div>
-
-      <div class="form-element">
-        <label for="model">Model</label>
-        <select id="model" name="model">
-            <option value="" disabled selected>---</option>
-            <option value="1">1 модель</option>
-            <option value="2">2 модель</option>
-        </select>
-      </div>
-
-      <div class="form-element">
-        <label for="is-used">Used</label>
-        <input type="checkbox" id="is-used" name="is-used">
-      </div>
-      
-      <p>Color</p>
-
-      <div class="form-element">
-        <label for="red">Red</label>
-        <input type="radio" id="red" name="color" value="Red">
-        <label for="black">Black</label>
-        <input type="radio" id="black" name="color" value="Black">
-        <label for="blue">Blue</label>
-        <input type="radio" id="blue" name="color" value="Blue">
-        <label for="white">White</label>
-        <input type="radio" id="white" name="color" value="White">
-        <label for="grey">Grey</label>
-        <input type="radio" id="grey" name="color" value="Grey">
-      </div>
-
-      <div class="form-element">
-        <label for="price">Price</label>
-        <input 
-          type="range" 
-          id="price" 
-          name="is-used"
-          min="1000"
-          max="10000"
-          step="1000"
-          list="money"
-        >
-        <datalist id="money">
-          <option value="1000" label="1000"></option>
-          <option value="2000" label="2000"></option>
-          <option value="3000" label="3000"></option>
-          <option value="4000" label="4000"></option>
-          <option value="5000" label="5000"></option>
-          <option value="6000" label="6000"></option>
-          <option value="7000" label="7000"></option>
-          <option value="8000" label="8000"></option>
-          <option value="9000" label="9000"></option>
-          <option value="10000" label="10000"></option>
-        </datalist>
-      </div>
-    </fieldset>
+    <div class="form-fields">
+      <fieldset>
+        <legend>Personal info</legend>
+        <div class="form-element">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+  
+        <div class="form-element">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
+  
+        <div class="form-element">
+          <label for="birthday">Birthday</label>
+          <input type="datetime-local" id="birthday" name="birthday">
+        </div>
+  
+        <div class="form-element">
+          <span>Gender</span>
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+          </div>
+          <div>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+          </div>
+        </div>
+  
+        <div class="form-element">
+          <label for="drive-experience">Drive experience</label>
+          <select id="drive-experience" name="drive-experience">
+              <option value="" disabled selected>---</option>
+              <option value="0-1">0-1 years</option>
+              <option value="1-3">1-3 years</option>
+              <option value="3-5">3-5 years</option>
+              <option value="5-10">5-10 years</option>
+              <option value="10+">10+ years</option>
+          </select>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Contacts</legend>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@gmail.com" required>
+        </div>
+  
+        <div class="form-element">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+380" required>
+        </div>
+  
+        <div class="form-element">
+          <label for="adress">Adress</label>
+          <textarea id="adress" name="adress" rows="2" cols="30" placeholder="Your adress"></textarea>
+        </div>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Car info</legend>
+        
+        <div class="form-element">
+          <label for="brand">Brand</label>
+          <select id="brand" name="brand">
+              <option value="" disabled selected>---</option>
+              <option value="Ford">Ford</option>
+              <option value="Toyota">Toyota</option>
+              <option value="BMW">BMW</option>
+          </select>
+        </div>
+  
+        <div class="form-element">
+          <label for="model">Model</label>
+          <select id="model" name="model">
+              <option value="" disabled selected>---</option>
+              <option value="1">1 модель</option>
+              <option value="2">2 модель</option>
+          </select>
+        </div>
+  
+        <div class="form-element is-used-checkbox">
+          <label for="is-used">Used</label>
+          <input type="checkbox" id="is-used" name="is-used">
+        </div>
+  
+        <div class="form-element">
+          <div>
+            <label for="red">Red</label>
+            <input type="radio" id="red" name="color" value="Red">
+          </div>
+          <div>
+            <label for="black">Black</label>
+            <input type="radio" id="black" name="color" value="Black">
+          </div>
+          <div>
+            <label for="blue">Blue</label>
+            <input type="radio" id="blue" name="color" value="Blue">
+          </div>
+          <div>
+            <label for="white">White</label>
+            <input type="radio" id="white" name="color" value="White">
+          </div>
+          <div>
+            <label for="grey">Grey</label>
+            <input type="radio" id="grey" name="color" value="Grey">
+          </div>
+        </div>
+  
+        <div class="form-element slider">
+          <label for="price">Price</label>
+          <input 
+            type="range" 
+            id="price" 
+            name="is-used"
+            min="10"
+            max="80"
+            step="10"
+            list="money"
+          >
+          <datalist id="money">
+            <option value="10" label="10">10</option>
+            <option value="20" label="20">20</option>
+            <option value="30" label="30">30</option>
+            <option value="40" label="40">40</option>
+            <option value="50" label="50">50</option>
+            <option value="60" label="60">60</option>
+            <option value="70" label="70">70</option>
+            <option value="80" label="80">80</option>
+          </datalist>
+        </div>
+      </fieldset>
+    </div>
     <div class="form-actions">
       <button type="reset">Cancel</button>
       <button type="submit">Ok</button>

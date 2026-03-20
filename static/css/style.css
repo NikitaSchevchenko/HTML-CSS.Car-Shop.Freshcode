@@ -3,7 +3,7 @@
 }
 
 main{
-    margin:5% 10%;
+    margin:5% 0е;
 }
 
 h1,h2{
@@ -11,25 +11,26 @@ h1,h2{
 }
 
 header{
+    display: flex;
     font-size:0;
     height:100px;
+    width: 100%;
+    position: sticky;
+    background-color:#fff;
+    top:0;
+    z-index: 10;
 }
 
 .logo{
-    display: inline-block;
-    width:calc((100%/3)*2);
+    flex-grow: 1;
     text-align: right;
 }
 nav{
-    display: inline-block;
-    width:calc(100%/3);
-    height:100%;
-    vertical-align: top;
+    flex-grow:2;
 }
 
 nav li{
-    display: inline-block;
-    width:calc(100%/5);
+    flex-grow: 1;
     height: 100%;
     border: 1px gainsboro solid;
     border-right: 0px;
@@ -50,6 +51,8 @@ nav li a{
 }
 
 nav ul{
+    display: flex;
+    justify-content: space-between;
     height:100%;
     padding:0;
 }
@@ -72,14 +75,13 @@ div.back-tomenu{
 footer{
     border-top:1px gainsboro solid;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 2px;
 }
 
-.footer-item{
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    margin-bottom: 2px;   
-}
 
 a.footer-item{
     text-decoration: none;
